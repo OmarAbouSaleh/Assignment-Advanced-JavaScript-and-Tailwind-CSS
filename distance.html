@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/tailwind.min.css">
-    <title>Document</title>
+    <title>Distance</title>
 </head>
 <body>
+<!--create the same style here for a distance converter-->
 <div class="container mx-auto">
     <div class="flex justify-center pt-10">
         <div class="w-1/2">
             <ul class="flex border-b">
                 <li class="-mb-px mr-1">
-                    <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold" href="#">Temperature</a>
+                    <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="./temp.html">Temperature</a>
                 </li>
                 <li class="mr-1">
-                    <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="./distance.html">Distance</a>
+                    <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold" href="#">Distance</a>
                 </li>
                 <li class="mr-1">
                     <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="weight.html">Weight</a>
@@ -28,7 +29,7 @@
             <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2">
-                        Temperature
+                        Distance
                     </label>
                     <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                 </div>
@@ -37,9 +38,13 @@
                         From
                     </label>
                     <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                        <option>Celcius</option>
-                        <option>Fahrenheit</option>
-                        <option>Kelvin</option>
+                        <option>Kilometers</option>
+                        <option>Meters</option>
+                        <option>Centimeters</option>
+                        <option>Miles</option>
+                        <option>Yards</option>
+                        <option>Feet</option>
+                        <option>Inches</option>
                     </select>
                 </div>
                 <div class="mb-4">
@@ -47,16 +52,20 @@
                         To
                     </label>
                     <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-                        <option>Celcius</option>
-                        <option>Fahrenheit</option>
-                        <option>Kelvin</option>
+                        <option>Kilometers</option>
+                        <option>Meters</option>
+                        <option>Centimeters</option>
+                        <option>Miles</option>
+                        <option>Yards</option>
+                        <option>Feet</option>
+                        <option>Inches</option>
                     </select>
                 </div>
                 <div class="mb-4">
                     <label class="block text-gray-700 text-sm font-bold mb-2">
                         Result
                     </label>
-                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" disabled>
                 </div>
                 <div class="mt-8">
                     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Convert</button>
