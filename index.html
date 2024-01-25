@@ -7,54 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- i want to create a card style temp, distance and weight converter -->
-    <!-- now center the main div -->
     <div class="container mx-auto">
-        <div class="flex justify-center">
+        <div class="flex justify-center pt-10">
             <div class="w-1/2">
-                <div class="bg-gray-200 rounded-lg shadow-lg p-6">
-                    <div class="flex justify-between">
-                        <div class="w-1/2">
-                            <h1 class="text-2xl font-bold mb-2">Temperature Converter</h1>
-                            <p class="text-gray-700">Convert Celsius to Fahrenheit</p>
-                        </div>
-                        <div class="w-1/2">
-                            <div class="relative">
-                                <input type="text" class="w-full rounded-lg pl-8 pr-2 py-2 border focus:outline-none focus:shadow-outline" placeholder="Celsius">
-                                <div class="absolute top-0 left-0 px-2 py-2">
-                                    <span class="text-gray-500">&#8451;</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex justify-between mt-4">
-                        <div class="w-1/2">
-                            <h1 class="text-2xl font-bold mb-2">Distance Converter</h1>
-                            <p class="text-gray-700">Convert Kilometers to Miles</p>
-                        </div>
-                        <div class="w-1/2">
-                            <div class="relative">
-                                <input type="text" class="w-full rounded-lg pl-8 pr-2 py-2 border focus:outline-none focus:shadow-outline" placeholder="Kilometers">
-                                <div class="absolute top-0 left-0 px-2 py-2">
-                                    <span class="text-gray-500">km</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex justify-between mt-4">
-                        <div class="w-1/2">
-                            <h1 class="text-2xl font-bold mb-2">Weight Converter</h1>
-                            <p class="text-gray-700">Convert Kilograms to Pounds</p>
-                        </div>
-                        <div class="w-1/2">
-                            <div class="relative">
-                                <input type="text" class="w-full rounded-lg pl-8 pr-2 py-2 border focus:outline-none
-                                focus:shadow-outline" placeholder="Kilograms">
-                                <div class="absolute top-0 left-0 px-2 py-2">
-                                    <span class="text-gray-500">kg</span>
-                                </div>
-                            </div>
-                        </div>
+                <ul class="flex border-b">
+                    <li class="-mb-px mr-1">
+                        <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-700 font-semibold" href="#">Temperature</a>
+                    </li>
+                    <li class="mr-1">
+                        <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#">Distance</a>
+                    </li>
+                    <li class="mr-1">
+                        <a class="bg-white inline-block py-2 px-4 text-blue-500 hover:text-blue-800 font-semibold" href="#">Weight</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="flex justify-center pt-10">
+            <div class="w-1/2">
+                <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2">
+                            Temperature
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
                     </div>
                     <div class="mt-8">
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Convert</button>
