@@ -11,7 +11,7 @@ function distanceConversion() {
       var numValue = parseFloat(value);
       if (!isNaN(numValue)) {
         var answer = (numValue * 0.621371).toFixed(2);
-        result.push(answer);
+        result.push(`${answer}Mi`);
       }
       else{
         result.push("Invalid")
@@ -22,7 +22,7 @@ function distanceConversion() {
       var numValue = parseFloat(value);
       if (!isNaN(numValue)) {
         var answer = (numValue / 0.621371).toFixed(2);
-        result.push(answer);
+        result.push(`${answer}Km`);
       }
       else{
         result.push("Invalid")
@@ -45,7 +45,7 @@ function tempConversion() {
       var numValue = parseFloat(value);
       if (!isNaN(numValue)) {
         var answer = ((numValue * 9 / 5) + 32).toFixed(2);
-        result.push(answer);
+        result.push(`${answer}\u00B0F`);
       }
       else{
         result.push("Invalid")
@@ -56,7 +56,7 @@ function tempConversion() {
       var numValue = parseFloat(value);
       if (!isNaN(numValue)) {
         var answer = ((numValue - 32) * 5 / 9).toFixed(2);
-        result.push(answer);
+        result.push(`${answer}\u00B0C`);
       }
       else{
         result.push("Invalid")
@@ -81,7 +81,7 @@ function weightConversion() {
         var numValue = parseFloat(value);
         if (!isNaN(numValue)) {
           var answer = ((numValue * 2.205).toFixed(2));
-          result.push(answer);
+          result.push(`${answer}Lbs`);
         }
         else{
           result.push("Invalid")
@@ -92,7 +92,7 @@ function weightConversion() {
         var numValue = parseFloat(value);
         if (!isNaN(numValue)) {
           var answer = ((numValue / 2.205).toFixed(2));
-          result.push(answer);
+          result.push(`${answer}Kg`);
         }
         else{
           result.push("Invalid")
