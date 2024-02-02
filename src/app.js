@@ -38,25 +38,17 @@ function tempConversion() {
   var resultElement = document.getElementById("result");
   var result = [];
 
-  console.log(input);
-  console.log(select);
-
-
   var arr = input.split(",");
 
   if (select == "Celsius to Fahrenheit") {
     for (var value of arr) {
       var numValue = parseFloat(value);
-      console.log(numValue);
       if (!isNaN(numValue)) {
         var answer = ((numValue * 9 / 5) + 32).toFixed(2);
         result.push(`${answer}\u00B0F`);
-
-        console.log(result);
       }
       else{
         result.push("Invalid")
-        console.log(result);
       }
     }
   } else if (select == "Fahrenheit to Celsius") {
