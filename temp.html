@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.6/tailwind.min.css">
   <title>Temp</title>
+  <script src ="app.js"></script>
 </head>
 <body>
 <div class="container mx-auto">
@@ -30,29 +31,30 @@
           <label class="block text-gray-700 text-sm font-bold mb-2">
             Temperature
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+          <input id="tempInput" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
         </div>
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">
             Conversion
           </label>
-          <select class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-            <option>Celcius to Fahrenheit</option>
-            <option>Fahrenheit to Celcius</option>
+          <select id="tempSelect" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            <option>Celsius to Fahrenheit</option>
+            <option>Fahrenheit to Celsius</option>
           </select>
         </div>
         <div class="mb-4">
           <label class="block text-gray-700 text-sm font-bold mb-2">
             Result
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" readonly>
+          <input id="tempResult" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" readonly>
         </div>
         <div class="mt-8">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >Convert</button>
+          <button onclick="temperatureConversion()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >Convert</button>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 </body>
 </html>
