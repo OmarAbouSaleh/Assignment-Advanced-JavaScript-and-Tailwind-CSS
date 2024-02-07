@@ -51,7 +51,7 @@ function tempConversion() {
         result.push("Invalid")
       }
     }
-  } else if (select == "Fahrenheit to Celsius") {
+  } else if (select == "Fahrenheit to Celsius") { 
     for (var value of arr) {
       var numValue = parseFloat(value);
 
